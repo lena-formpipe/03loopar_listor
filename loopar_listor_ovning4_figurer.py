@@ -35,7 +35,7 @@ for y in range(1, 7):
     s = ""
     # skriv ut 9 positioner med tecken
     for x in range(1, 9):
-        if x == 3 or x == 4 or x == 5:
+        if x >= 3 and x <= 5:
             s += "#"
         else:
             s += "."
@@ -62,31 +62,32 @@ for y in range(1, 7):
 # Figur E
 print("\nFigur E ")
 # Skriv ut 6 rader
-new = 6
+# varibel kan ha bättre namn är new... jag vet
+position_of_row = 6
 for y in range(1, 7):
     s = ""
     # skriv ut 9 positioner med tecken
     for x in range(1, 9):
-        if x == 5 or x == new:
+        if x == 5 or x == position_of_row:
             s += "#"
         else:
             s += "."
-    new += -1
+    position_of_row += -1
     print(s)
 
 # Figur F
 print("\nFigur F ")
 # Skriv ut 6 rader
-new = 6
+position_of_row = 6
 for y in range(1, 7):
     s = ""
     # skriv ut 9 positioner med tecken
     for x in range(1, 9):
-        if x == y or x == new:
+        if x == y or x == position_of_row:
             s += "#"
         else:
             s += "."
-    new += -1
+    position_of_row += -1
     print(s)
 
 # Figur G
@@ -96,6 +97,7 @@ for y in range(1, 7):
     s = ""
     # skriv ut 9 positioner med tecken
     for x in range(1, 9):
+        # om delbart med 2 = jämn rad
         if x%2 != 0:
             s += "#"
         else:

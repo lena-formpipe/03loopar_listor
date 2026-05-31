@@ -1,7 +1,6 @@
 # 3 Kvittouträknaren
 # Gör ett program som upprepade gånger ber användaren skriva in ett tal.
 # När man skriver in strängen "quit" eller "avsluta" ska programmet ska det räkna ut summan av talen.
-from loopar_listor_ovning2 import length_lista_filmer
 
 print("Välkommen till Kvittokompis! \nProgrammet summerar dina kvitton.\nAvsluta genom att skriva quit eller avsluta. ")
 summa = 0
@@ -16,6 +15,7 @@ while True:
         print("Programmet avslutas och summerar inmatade belopp.")
         break
 
+    # kontroll och felhantering ifall inmatat_belopp inte är float
     try:
         inmatat_belopp = float(inmatat_belopp)
         lista_inmatade_belopp.append(inmatat_belopp)
