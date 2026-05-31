@@ -20,26 +20,30 @@ while True:
         print(f"Det slumpade talet var {secret_number}.")
         break
     number_of_guesses += 1
-    # kontroll och felhantering ifall inmatat_belopp inte är float
+    # kontroll och felhantering ifall inmatat_belopp inte är integer
     try:
         guess_number = int(guess_number)
+        if guess_number == secret_number:
+            print(f"\nRÄTT!! Du gjorde det på {number_of_guesses} gissningar.")
+            break
+        elif guess_number > secret_number:
+            print("Nej, det är för högt!.")
+            if guess_number <= (secret_number + 5):
+                print("Nu börjar det brännas!")
+            if guess_number > max_number:
+                print(f"OBS! Din gissning var högre än {max_number}. ")
+        elif guess_number < secret_number:
+            print("Nej, det är för lågt!")
+            if guess_number >= (secret_number - 5):
+                print("Nu börjar det brännas!")
+            if guess_number < min_number:
+                print(f"OBS! Din gissning var lägre än {min_number}. ")
 
     except:
         print("Du får bara skriva heltal eller q")
 
-    if guess_number == secret_number:
-        print(f"\nRÄTT!! Du gjorde det på {number_of_guesses} gissningar.")
-        break
-    elif guess_number > secret_number:
-        print("Nej, det är för högt!.")
-        if guess_number <= (secret_number + 5):
-            print("Nu börjar det brännas!")
-        if guess_number > max_number:
-            print(f"OBS! Din gissning var högre än {max_number}. ")
-    elif guess_number < secret_number:
-        print("Nej, det är för lågt!")
-        if guess_number >= (secret_number - 5):
-            print("Nu börjar det brännas!")
-        print(f"OBS! Din gissning var lägre än {min_number}. ")
+
+
+
 
 
