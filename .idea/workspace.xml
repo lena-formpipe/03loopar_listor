@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f791ae73-f3b5-40a1-a8d3-a19ba4bec14f" name="Changes" comment="övning 6 edits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loopar_listor_ovning6_todo_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/loopar_listor_ovning6_todo_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,7 @@
       <workItem from="1779975681816" duration="8173000" />
       <workItem from="1780071765262" duration="26550000" />
       <workItem from="1780232635885" duration="913000" />
-      <workItem from="1780233583354" duration="4893000" />
+      <workItem from="1780233583354" duration="5916000" />
     </task>
     <task id="LOCAL−00001" summary="övning 2 som består av flera små delövningar">
       <option name="closed" value="true" />
@@ -194,7 +193,14 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1780237229922</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="övning 6 edits">
+      <option name="closed" value="true" />
+      <created>1780238517964</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1780238517964</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
