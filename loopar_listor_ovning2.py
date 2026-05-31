@@ -28,11 +28,13 @@ print(f"1c: Summan av talen 1 till 100 är: {sum_1c}")
 # 2 Räkna ut summan av alla elementen i listan: [1, -2, 3, -2, 4, -3]
 list = [1, -2, 3, -2, 4, -3]
 sum_2 = 0
-# for loop av samma längd som listans ilängd gör att alla element summeras
+print("\n2: Räkna ut summan av alla element i listan:")
+print(list)
+# for loop av samma längd som listans längd gör att alla element summeras
 for i in range(len(list)):
     sum_2 += list[i]
     i += 1
-print(f"2: Summan av talen i listan är: {sum_2}")
+print(f"Summan av talen i listan är: {sum_2}")
 
 # -------------------------------------------------
 # 3 Träna på att skapa och manipulera listor.
@@ -64,6 +66,7 @@ print(f"Uppgift 3e: Fellowship of the ring har nu bytt till index: {index_fellow
 # Ta reda på hur lång listan är. (len)
 length_lista_filmer = len(lista_filmer)
 print(f"\n3f: Längden på listan med filmer är {length_lista_filmer}")
+print(lista_filmer)
 
 # 3g Vänd listan baklänges.
 lista_filmer.reverse()
