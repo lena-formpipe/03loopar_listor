@@ -42,8 +42,8 @@ while choise !=5:
         if len(todo_list) < 1:
             print("Din todo-lista är tom")
         else:
+            print("Så här ser din todo-lista ut:")
             for y in range(0, len(todo_list)):
-                print("Så här ser din todo-lista ut:")
                 print(f"+ {todo_list[y]}")
                 y += 1
     # Skriv in en ny sak på todo-listan
@@ -56,10 +56,6 @@ while choise !=5:
     # version 2: lägg till ett menyalternativ, "Markera som klar".
     # När användaren väljer det, ska programmet fråga efter vilken grej man är färdig med.
     # Den färdiga grejen ska tas bort från listan.
-    # Version 3: lägg över färdiga grejer i en ny lista.
-    # Användaren ska kunna välja vad man har bockat av tidigare,
-    # eller välja att lägga tillbaka grejen i todo-listan.
-
     elif choise == 3:
         remove_item = input("Vilken uppgift ska markeras som klar?: ")
         remove_item = remove_item.strip()
@@ -71,7 +67,9 @@ while choise !=5:
         else:
             print(f"Hittade inte '{remove_item}' i listan.")
 
-    # Skriv ut done-listan
+    # Version 3: lägg över färdiga grejer i en ny lista. (inkluderas i avsnittet version 2).
+    # Not included: Användaren ska kunna välja vad man har bockat av tidigare, eller välja att lägga tillbaka grejen i todo-listan.
+    # Included: Skriv ut done-listan
     elif choise == 4:
         if len(done_list) < 1:
             print("Din done-lista är tom")
